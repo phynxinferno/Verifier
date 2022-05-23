@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Noto+Sans:wght@300&display=swap');
+:root {
+	/*Uses Catppuccin colour palette as specified by the Catppuccin design guidelines.
+	Catppuccin is liscenesed under the MIT liscense and is copyright of the Catppuccin Organization*/
+	
+	/*Black0|White0*/
+	--base: rgb(22, 19, 32);
+	/*Black2|White2*/
+	--overlay: rgb(30, 30, 46);
+	/*Lavender*/
+	--text: rgb(201, 203, 255);
+	/*Blue*/
+	--accent: rgb(245, 224, 220);
+	/*Maroon*/
+	--alert: rgb(232, 162, 175);
+}
+body {
+	background-color: var(--base);
+	color: var(--text);
+	font-family: 'Fira Code';
+	margin: 0;
+}
+h1 {
+	color: var(--accent);
+}
+h2 {
+	color: var(--accent);
+}
+h3 {
+	color: var(--accent);
+}
+p {
+}
+input {
+	background-color: var(--base);
+	color: var(--text);
+	border-style: none;
+	border-bottom-style: solid;
+	border-bottom-color: var(--accent);
+	border-bottom-width: 1px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-family: 'Fira Code', monospace;
+}
+a {
+	text-decoration: none;
+	color: var(--accent);
+}
+#title {
+	display: inline-block;
+	font-size: 3em;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#title:hover {
+	text-decoration: underline;
+}
+#title:hover::before {
+	content: '< ';
+	text-decoration: underline;
+}
+#topBar {
+	background-color: var(--overlay);
+	height: 100px;
+	width: 100%;
+	display: block;
+	position: absolute;
+}
+#topBar span {
+	font-size: 1.5em;
+}
+#topBar img {
+	width: 50px;
+	height: auto;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	margin-top: 10px;
+}
+#loginBox {
+	position: absolute;
+	background-color: var(--overlay);
+	height: 90%;
+	width: 60%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	border-color: var(--accent);
+	border-style: solid;
+	padding: 5px;
+	border-radius: 15px;
+}
+#loginBox h2 {
+	text-align: center;
+}
+#loginBox label {
+	margin-left: 20px;
+}
+.warning {
+	color: var(--alert);
+	display: none;
+	text-align: center;
+}
+.button {
+	background-color: var(--base);
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 20%;
+	border-style: solid;
+	padding: 2px;
+	cursor: pointer;
+	border-width: 1px;
+	color: var(--accent);
+	border-radius: 5px;
+}
+.button:hover {
+	text-decoration: underline;
+	transform: scale(1.05);
+	margin-left: 4px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./styles.css">
+		<script src="./render.js"></script>
+		<script src="./apps.js"></script>
+		<meta name="name" content="CBSC Verifier Portal">
+		<meta name="descripting" content="Access various verification services">
+		<title>CBSC Verification Portal</title>
+	</head>
+	<body>
+		<div id="loginBox">
+			<h2>
+				Login or Verify
+			</h2>
+			<p class='warning' id="verSuccess">
+				Email delivered. Check your inbox!
+			</p>
+			<p class='warning' id="fail">
+				Failed to login. Try again or re-verify to reset your code.
+			</p>
+			<p class='warning' id="loginMsg">
+				We couldn't find a login cooking in your browser. Please login or verify to continue:
+			</p>
+			<br>
+			<h3>Verify:</h3>
+			<label for="verify">Board Email: </label>
+			<input type="text" name="verify">
+			<br>
+			<span class="button" id="verify"><b>Verify</b></span>
+			<br>
+			<h3>Login:</h3>
+			<label for="email">Board Email: </label>
+			<input type="text" name="email">
+			<br>
+			<label for="code">Verification Code: </label>
+			<input type="password" name="code">
+			<p class="button" id="login"><b>Login</b></p>
+		</div>
+		<div id="topBar">
+			<a id="title" href="https://www.cbstudents.ca">
+			<b>
+					Verifier Portal
+			</b>
+			</a>
+			<span> ://</span>
+			<img src="./resources/moon.svg" id="toggleMode">
+		</div>
+		
+	</body>
+</html>
