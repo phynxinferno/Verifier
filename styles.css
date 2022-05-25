@@ -120,3 +120,24 @@ a {
 	transform: scale(1.05);
 	margin-left: 4px;
 }
+#serviceContainer {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 40%;
+	height: 20%;
+}
+#serviceContainer div {
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: var(--overlay);
+	border-color: var(--accent);
+	border-style: solid;
+	border-radius: 5px;
+	display: block;
+	border-width: 1px;
+	position: relative;
+	height: 100%;
+	width: 50%;
+}
